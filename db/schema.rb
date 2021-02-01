@@ -10,16 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_01_193641) do
+ActiveRecord::Schema.define(version: 2021_02_01_210535) do
 
   create_table "books", force: :cascade do |t|
     t.string "title"
     t.string "author"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
     t.string "status"
-    t.date "len_date"
     t.date "returned_date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.date "lent_date"
   end
 
 end
