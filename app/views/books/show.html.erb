@@ -10,5 +10,20 @@
   <%= @book.author %>
 </p>
 
+<p>
+  <strong>Status:</strong>
+  <%= @book.status %>
+</p>
+
+<p>
+  <strong>Lent date:</strong>
+  <%= @book.lent_date %>
+</p>
+
+<p>
+  <strong>Returned date:</strong>
+  <%= @book.returned_date %>
+</p>
+
 <%= link_to 'Edit', edit_book_path(@book) %> |
 <%= link_to 'Back', books_path %>
